@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>O Poder da Manipulação • eBook Oficial</title>
+	<meta name="description" content="Domine técnicas éticas de influência e persuasão com o eBook O Poder da Manipulação. Moldes práticos, exemplos, bônus e garantia para aplicar hoje mesmo." />
+	<meta name="theme-color" content="#00FF88" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		:root { --neon:#00FF88; --bg-dark:#0b0b0c; --bg-alt:#181a1b; --bg-panel:#111212; --grad:radial-gradient(circle at 30% 20%, #093 0%, #021 20%, #0b0b0c 55%); }
+		body { font-family:'Poppins',system-ui,sans-serif; background:linear-gradient(140deg,#050505,#121212,#050505); color:#d9d9d9; -webkit-font-smoothing:antialiased; }
+		.font-head { font-family:'Montserrat', 'Poppins', sans-serif; }
+		.neon-text { color:var(--neon); text-shadow:0 0 4px var(--neon),0 0 12px var(--neon),0 0 28px #0f4; }
+		.neon-ring { box-shadow:0 0 6px var(--neon),0 0 18px var(--neon) inset,0 0 24px var(--neon); }
+		.glow-border { position:relative; }
+		.glow-border:before { content:""; position:absolute; inset:0; padding:1px; border-radius:1.1rem; background:linear-gradient(135deg,var(--neon) 0%,transparent 60%); -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; opacity:.85; }
+		.btn-neon { background:var(--neon); color:#031; font-weight:800; letter-spacing:.5px; box-shadow:0 0 10px var(--neon),0 0 30px var(--neon); transition:.18s ease; }
+		.btn-neon:hover { transform:translateY(-3px) scale(1.03); box-shadow:0 0 16px var(--neon),0 0 42px var(--neon); }
+		.btn-outline-neon { border:2px solid var(--neon); color:var(--neon); text-shadow:0 0 8px var(--neon); }
+		.btn-outline-neon:hover { background:var(--neon); color:#031; box-shadow:0 0 14px var(--neon),0 0 38px var(--neon); }
+		.hero-grad { background:linear-gradient(125deg,#000,#07110c 35%,#000 70%); position:relative; overflow:hidden; }
+		.hero-grad:after { content:""; position:absolute; width:1200px; height:1200px; top:-400px; right:-450px; background:radial-gradient(circle at center,var(--neon) 0%,rgba(0,255,136,0.05) 35%,transparent 70%); filter:blur(140px) brightness(1.2) saturate(1.4); opacity:.35; pointer-events:none; }
+		.pulse-dot { position:relative; }
+		.pulse-dot:before { content:""; position:absolute; left:0; top:10px; width:10px; height:10px; background:var(--neon); border-radius:50%; box-shadow:0 0 8px var(--neon),0 0 18px var(--neon); animation:pulse 1.8s infinite; }
+		@keyframes pulse { 0%,100% { transform:scale(1); opacity:1;} 50% { transform:scale(.55); opacity:.45;} }
+		.list-neon li { padding-left:1.75rem; margin-bottom:.85rem; line-height:1.35; font-size:1.05rem; }
+		.list-neon li:before { content:""; position:absolute; left:0; top:.45rem; width:10px; height:10px; background:var(--neon); border-radius:50%; box-shadow:0 0 10px var(--neon),0 0 22px var(--neon); animation:pulse 2s infinite; }
+		.list-neon { list-style:none; margin:0; padding:0; }
+		.card { background:linear-gradient(160deg,#101414,#0a0d0c); border:1px solid #0d3021; border-radius:1.1rem; position:relative; overflow:hidden; }
+		.card:before { content:""; position:absolute; inset:0; background:linear-gradient(145deg,rgba(0,255,136,0.08),transparent 55%); opacity:.7; pointer-events:none; }
+		.card-edge { border:1px solid rgba(0,255,136,0.35); box-shadow:0 0 12px rgba(0,255,136,0.4); }
+		.testimonial { font-size:.95rem; color:#b9bfbf; }
+		.badge { background:rgba(0,255,136,0.1); border:1px solid rgba(0,255,136,0.4); padding:.3rem .75rem; border-radius:999px; font-size:.65rem; letter-spacing:1px; text-transform:uppercase; font-weight:600; color:var(--neon); }
+		.price-shadow { text-shadow:0 0 10px var(--neon),0 0 26px var(--neon); }
+		.divider-neon { height:1px; background:linear-gradient(90deg,transparent,var(--neon),transparent); opacity:.5; }
+		.hover-tilt { transition:transform .4s; }
+		.hover-tilt:hover { transform:translateY(-6px) rotateX(8deg) rotateY(-6deg); }
+		::selection { background:var(--neon); color:#041; }
+		/* Mobile tweaks */
+		@media (max-width:640px){ .hero-title { font-size:2.15rem; } }
+	</style>
+</head>
+<body>
+	<!-- HERO -->
+	<header class="hero-grad relative isolate text-center px-6 pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden">
+		<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+			<div class="order-2 md:order-1 text-left">
+				<span class="badge mb-5 inline-block">EBOOK EXCLUSIVO</span>
+				<h1 class="hero-title font-head font-extrabold tracking-tight leading-[1.05] text-4xl md:text-6xl neon-text">O Poder da Manipulação</h1>
+				<p class="mt-6 text-lg md:text-xl text-gray-300 max-w-xl">Aprenda mecanismos psicológicos de influência para comunicar, persuadir e <span class="neon-text font-semibold">gerar decisões consistentes</span>. Aplique hoje e eleve sua autoridade.</p>
+				<ul class="mt-6 space-y-3 text-sm text-gray-400">
+					<li class="flex items-start gap-3"><span class="mt-1 w-3 h-3 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span><span>Framework prático de suspense em 7 etapas</span></li>
+					<li class="flex items-start gap-3"><span class="mt-1 w-3 h-3 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span><span>Exercícios aplicáveis e checklist operacional</span></li>
+					<li class="flex items-start gap-3"><span class="mt-1 w-3 h-3 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span><span>Bônus exclusivos para acelerar resultados</span></li>
+				</ul>
+				<div class="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
+					<a href="https://pay.cakto.com.br/jwjowbf" target="_blank" class="btn-neon rounded-full px-9 py-4 text-lg uppercase inline-block text-center">Quero Meu eBook Agora</a>
+					<a href="#oferta" class="btn-outline-neon rounded-full px-8 py-4 text-sm font-semibold tracking-wide inline-block text-center">Ver Oferta</a>
+				</div>
+			</div>
+			<div class="order-1 md:order-2 flex justify-center">
+				<div class="relative group hover-tilt">
+					<div class="absolute -inset-3 rounded-2xl opacity-60 blur-xl bg-[radial-gradient(circle_at_center,var(--neon),transparent_60%)] group-hover:opacity-90 transition"></div>
+					<figure class="relative rounded-2xl p-[3px] bg-gradient-to-br from-[var(--neon)]/60 via-[#052d19] to-transparent">
+						<div class="rounded-2xl overflow-hidden border border-[var(--neon)]/50 shadow-[0_0_32px_rgba(0,255,136,0.42)] bg-black flex items-center justify-center">
+							<picture>
+								<source srcset="assets/Capa-ebook.jpg" type="image/jpeg" />
+								<img src="assets/Capa-ebook.jpg" alt="Capa do eBook O Poder da Manipulação" class="ebook-cover max-w-[320px] md:max-w-[360px] w-auto h-auto object-contain" loading="lazy" width="512" height="768" />
+							</picture>
+						</div>
+						<figcaption class="sr-only">Capa do eBook O Poder da Manipulação</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- BENEFÍCIOS / TRANSFORMAÇÕES -->
+	<section class="relative py-20 px-6 bg-[#0c0f11] overflow-hidden">
+		<div class="absolute inset-0 opacity-[0.12]" style="background:repeating-linear-gradient(45deg,rgba(0,255,136,0.05) 0 2px,transparent 2px 6px);"></div>
+		<div class="max-w-6xl mx-auto relative">
+			<h2 class="font-head text-3xl md:text-4xl font-extrabold text-center neon-text mb-14">O que este eBook Vai Fazer por Você</h2>
+			<div class="grid md:grid-cols-3 gap-10">
+				<div class="card p-7 flex flex-col gap-4">
+					<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[var(--neon)]/10 border border-[var(--neon)]/40 text-[var(--neon)]">⚡</div>
+					<h3 class="font-head text-lg font-bold neon-text">Domine a Tensão</h3>
+					<p class="text-sm leading-relaxed">Construa cenas que prendem a atenção e fazem o leitor virar página sem perceber o tempo passar.</p>
+				</div>
+				<div class="card p-7 flex flex-col gap-4">
+					<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[var(--neon)]/10 border border-[var(--neon)]/40 text-[var(--neon)]">🧠</div>
+					<h3 class="font-head text-lg font-bold neon-text">Estrutura Mental</h3>
+					<p class="text-sm leading-relaxed">Aplicação de gatilhos narrativos e ritmo para reter emoção e curiosidade até o clímax.</p>
+				</div>
+				<div class="card p-7 flex flex-col gap-4">
+					<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[var(--neon)]/10 border border-[var(--neon)]/40 text-[var(--neon)]">🚀</div>
+					<h3 class="font-head text-lg font-bold neon-text">Resultados Rápidos</h3>
+					<p class="text-sm leading-relaxed">Exercícios simples para incorporar técnicas já na sua próxima história ou roteiro.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CONTEÚDO DO EBOOK -->
+	<section id="conteudo" class="py-20 px-6 bg-gradient-to-b from-[#0d1213] via-[#121b1a] to-[#0b0e0f] relative">
+		<div class="max-w-6xl mx-auto">
+			<div class="flex flex-col md:flex-row md:items-start gap-14">
+				<div class="md:w-1/2">
+					<h2 class="font-head text-3xl font-extrabold neon-text mb-8 leading-tight">Dentro do eBook: Estrutura • Técnicas • Execução</h2>
+					<ul class="list-neon relative">
+						<li class="pulse-dot">Mapa rápido: visão geral em 1 página</li>
+						<li class="pulse-dot">Construção de tensão progressiva</li>
+						<li class="pulse-dot">Personagens com segredos funcionais</li>
+						<li class="pulse-dot">Timing de revelações e viradas</li>
+						<li class="pulse-dot">Checklist de revisão de suspense</li>
+						<li class="pulse-dot">Erros clássicos para evitar</li>
+						<li class="pulse-dot">Mini-curso bônus de ritmo narrativo</li>
+					</ul>
+					<p class="mt-8 text-gray-400 text-sm max-w-md">Cada capítulo foi desenhado para ser direto, prático e acionável. Você lê, aplica e sente evolução imediata.</p>
+				</div>
+				<div class="md:w-1/2 grid sm:grid-cols-2 gap-6">
+					<div class="glow-border bg-[#0a0f0e]/70 backdrop-blur-sm rounded-xl p-6 flex flex-col gap-3">
+						<h3 class="font-head text-[var(--neon)] font-bold">Cap. 1</h3>
+						<p class="text-sm text-gray-300">Fundamentos e pilares de tensão real.</p>
+					</div>
+					<div class="glow-border bg-[#0a0f0e]/70 backdrop-blur-sm rounded-xl p-6 flex flex-col gap-3">
+						<h3 class="font-head text-[var(--neon)] font-bold">Cap. 2</h3>
+						<p class="text-sm text-gray-300">Dinâmica de segredos e antecipação.</p>
+					</div>
+						<div class="glow-border bg-[#0a0f0e]/70 backdrop-blur-sm rounded-xl p-6 flex flex-col gap-3">
+						<h3 class="font-head text-[var(--neon)] font-bold">Cap. 3</h3>
+						<p class="text-sm text-gray-300">Estrutura de viradas e escalonamento.</p>
+					</div>
+					<div class="glow-border bg-[#0a0f0e]/70 backdrop-blur-sm rounded-xl p-6 flex flex-col gap-3">
+						<h3 class="font-head text-[var(--neon)] font-bold">Cap. 4</h3>
+						<p class="text-sm text-gray-300">Ritmo, pausa e respiração narrativa.</p>
+					</div>
+					<div class="glow-border bg-[#0a0f0e]/70 backdrop-blur-sm rounded-xl p-6 flex flex-col gap-3 sm:col-span-2">
+						<h3 class="font-head text-[var(--neon)] font-bold">Cap. 5 • Toolkit</h3>
+						<p class="text-sm text-gray-300">Checklist + fluxo de revisão em camadas.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- PROVA SOCIAL -->
+	<section id="prova" class="py-20 px-6 bg-[#0b0d0e] relative">
+		<div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(0,255,136,0.15),transparent_60%)] opacity-60"></div>
+		<div class="max-w-6xl mx-auto relative">
+			<h2 class="font-head text-3xl md:text-4xl font-extrabold neon-text text-center mb-14">Quem Já Leu Recomenda</h2>
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="card card-edge p-7 flex flex-col gap-4">
+					<p class="testimonial">“Nunca escrevi cenas tão envolventes. É como se eu tivesse destravado um código secreto.”</p>
+					<div class="text-[var(--neon)] font-head font-semibold text-sm">Ana S.</div>
+				</div>
+				<div class="card card-edge p-7 flex flex-col gap-4">
+					<p class="testimonial">“O checklist vale o preço sozinho. Revisar ficou objetivo e rápido.”</p>
+					<div class="text-[var(--neon)] font-head font-semibold text-sm">Carlos M.</div>
+				</div>
+				<div class="card card-edge p-7 flex flex-col gap-4">
+					<p class="testimonial">“Aplicação direta. Já melhorei meu roteiro em uma semana.”</p>
+					<div class="text-[var(--neon)] font-head font-semibold text-sm">Juliana P.</div>
+				</div>
+			</div>
+			<div class="mt-14 flex flex-col items-center gap-3 text-center">
+				<picture>
+					<source srcset="assets/foto-autor.jpg" type="image/jpeg" />
+					<img src="assets/foto-autor.jpg" alt="Foto do autor Lucas" class="w-24 h-24 rounded-full object-cover border-2 border-[var(--neon)] shadow-[0_0_18px_var(--neon)]" loading="lazy" width="240" height="240" />
+				</picture>
+				<p class="max-w-2xl text-sm text-gray-400">Escrito por <span class="text-[var(--neon)] font-semibold">Lucas</span>, pesquisador de comportamento, comunicação estratégica e storytelling aplicado ao processo decisório.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- OFERTA E BÔNUS -->
+	<section id="oferta" class="py-24 px-6 relative bg-gradient-to-b from-[#0c1413] via-[#09100f] to-black">
+		<div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_center,rgba(0,255,136,0.2),transparent_70%)]"></div>
+		<div class="max-w-5xl mx-auto relative">
+			<div class="text-center mb-14">
+				<h2 class="font-head text-3xl md:text-4xl font-extrabold neon-text">Oferta Especial + Bônus Limitados</h2>
+				<p class="mt-4 text-gray-400 max-w-2xl mx-auto">Um pacote completo para você acelerar domínio narrativo sem desperdiçar tempo em tentativa e erro.</p>
+			</div>
+			<div class="grid lg:grid-cols-2 gap-10 items-start">
+				<div class="glow-border rounded-2xl p-10 bg-[#07100e]/70 backdrop-blur-sm flex flex-col gap-6">
+					<div>
+						<span class="badge mb-4">PACOTE COMPLETO</span>
+						<h3 class="font-head text-2xl font-bold neon-text mb-2">Apenas Hoje</h3>
+						<p class="text-sm text-gray-400">Preço simbólico para máxima acessibilidade enquanto o lançamento estiver ativo.</p>
+					</div>
+					<div class="divider-neon"></div>
+					<div class="flex items-end gap-5">
+						<div>
+							<div class="text-gray-500 line-through text-lg">R$ 97,00</div>
+							<div class="text-5xl font-head font-extrabold neon-text price-shadow">R$ 29,90</div>
+						</div>
+						<div class="text-xs text-gray-400 mb-2">Pagamento único<br />Acesso imediato</div>
+					</div>
+					<ul class="space-y-3 text-sm text-gray-300">
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>eBook completo (PDF + atualizações)</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Checklist operacional</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Planner de estrutura</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Mini-curso bônus (vídeo)</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Suporte inicial por e-mail</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Atualizações futuras gratuitas</li>
+					</ul>
+					<div class="divider-neon"></div>
+					<div class="flex flex-wrap gap-4 items-center text-[13px] text-gray-400">
+						<div class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-[var(--neon)]/15 border border-[var(--neon)] flex items-center justify-center text-[10px] font-bold text-[var(--neon)]">✔</span> Garantia 7 dias</div>
+						<div class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-[var(--neon)]/15 border border-[var(--neon)] flex items-center justify-center text-[10px] font-bold text-[var(--neon)]">⚡</span> Entrega instantânea</div>
+						<div class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-[var(--neon)]/15 border border-[var(--neon)] flex items-center justify-center text-[10px] font-bold text-[var(--neon)]">🔒</span> Checkout seguro</div>
+					</div>
+					<a href="https://pay.cakto.com.br/jwjowbf" target="_blank" class="btn-neon rounded-xl px-10 py-5 text-xl uppercase text-center">Garantir Meu Acesso</a>
+					<p class="text-[11px] text-gray-500 leading-relaxed">Pagamento processado pela Cakto. Seus dados estão protegidos. Se não amar o conteúdo, peça reembolso em até 7 dias: simples, direto.</p>
+				</div>
+				<div class="space-y-8">
+					<div class="grid sm:grid-cols-2 gap-6">
+						<div class="card p-6 flex flex-col gap-3">
+							<h4 class="font-head text-[var(--neon)] font-bold text-sm tracking-wide">BÔNUS 1</h4>
+							<p class="text-sm text-gray-300">Checklist de suspense para validar cada capítulo rapidamente.</p>
+						</div>
+						<div class="card p-6 flex flex-col gap-3">
+							<h4 class="font-head text-[var(--neon)] font-bold text-sm tracking-wide">BÔNUS 2</h4>
+							<p class="text-sm text-gray-300">Planner de histórias para estruturar tensão sem travar.</p>
+						</div>
+						<div class="card p-6 flex flex-col gap-3">
+							<h4 class="font-head text-[var(--neon)] font-bold text-sm tracking-wide">BÔNUS 3</h4>
+							<p class="text-sm text-gray-300">Mini-curso vídeo sobre ritmo e timing de revelações.</p>
+						</div>
+						<div class="card p-6 flex flex-col gap-3">
+							<h4 class="font-head text-[var(--neon)] font-bold text-sm tracking-wide">GARANTIA</h4>
+							<p class="text-sm text-gray-300">7 dias para testar sem risco. Não gostou? Reembolso sem burocracia.</p>
+						</div>
+					</div>
+					<div class="bg-[#07100e] border border-[var(--neon)]/40 rounded-xl p-8 flex flex-col gap-4">
+						<h4 class="font-head text-lg font-bold neon-text">Para quem é?</h4>
+						<ul class="space-y-2 text-sm text-gray-300">
+							<li>Quem quer escrever histórias mais intensas</li>
+							<li>Roteiristas que precisam aumentar retenção</li>
+							<li>Autores que travam na construção de viradas</li>
+							<li>Criadores que desejam acelerar evolução</li>
+						</ul>
+					</div>
+					<div class="text-center pt-4">
+						<p class="text-gray-400 text-sm">Dúvida? Envie um e-mail: <a href="mailto:contato@exemplo.com" class="text-[var(--neon)] hover:underline">contato@exemplo.com</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA FINAL -->
+	<section class="py-24 px-6 bg-[#050606] relative overflow-hidden text-center">
+		<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,136,0.18),transparent_70%)] opacity-70"></div>
+		<div class="max-w-3xl mx-auto relative">
+			<h2 class="font-head text-3xl md:text-4xl font-extrabold neon-text leading-tight">Não perca tempo. Transforme sua escrita agora.</h2>
+			<p class="mt-6 text-gray-300">Cada dia adiando é uma história menos poderosa. Comece hoje e evolua leitura após leitura.</p>
+			<a href="https://pay.cakto.com.br/jwjowbf" target="_blank" class="btn-neon mt-10 inline-block rounded-full px-12 py-6 text-xl uppercase">Comprar Agora</a>
+			<p class="mt-4 text-[12px] tracking-wide text-gray-500">Acesso imediato • Atualizações incluídas • Garantia de 7 dias</p>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="bg-black/95 border-t border-[var(--neon)]/20 py-10 px-6 text-center text-gray-500 text-sm">
+		<div class="max-w-6xl mx-auto flex flex-col gap-4 items-center">
+			<nav class="flex flex-wrap justify-center gap-6 text-[13px]">
+				<a href="#conteudo" class="hover:text-[var(--neon)] transition">Conteúdo</a>
+				<a href="#prova" class="hover:text-[var(--neon)] transition">Depoimentos</a>
+				<a href="#oferta" class="hover:text-[var(--neon)] transition">Oferta</a>
+			</nav>
+			<p>© 2025 Lucas • Todos os direitos reservados.</p>
+			<p class="text-[11px] max-w-xl">Este site não é afiliado ao Facebook, Google ou qualquer outra plataforma. Marcas e nomes citados pertencem aos seus respectivos proprietários.</p>
+		</div>
+	</footer>
+
+	<!-- SMOOTH SCROLL -->
+	<script>
+		document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href'); if(id.length>1){ e.preventDefault(); document.querySelector(id)?.scrollIntoView({behavior:'smooth'});} }));
+	</script>
+</body>
+</html>
