@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="bg" cx="32" cy="32" r="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.90"/>
+      <stop offset="40%" stop-color="#053823" stop-opacity="0.65"/>
+      <stop offset="78%" stop-color="#06130e" stop-opacity="1"/>
+    </radialGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 .55 0 0  0 0 0 1 0" result="g"/>
+      <feBlend in="SourceGraphic" in2="g" mode="screen"/>
+    </filter>
+  </defs>
+  <!-- Círculo base -->
+  <circle cx="32" cy="32" r="30" fill="#050806"/>
+  <circle cx="32" cy="32" r="27.8" fill="url(#bg)" stroke="#00ff88" stroke-width="1.4" filter="url(#glow)"/>
+  <!-- Anel interno decorativo -->
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#00ff88" stroke-opacity="0.6" stroke-width="2" stroke-dasharray="4 6" filter="url(#glow)"/>
+  <circle cx="32" cy="32" r="9" fill="#00ff88" fill-opacity="0.08" stroke="#00ff88" stroke-width="1" filter="url(#glow)"/>
+  <!-- Brilho sutil -->
+  <circle cx="47" cy="18" r="5" fill="#00ff88" fill-opacity="0.14" stroke="#00ff88" stroke-width="1" filter="url(#glow)"/>
+</svg>
