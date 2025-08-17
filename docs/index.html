@@ -3,11 +3,19 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>O Poder da Manipulação • eBook Oficial</title>
-	<meta name="description" content="Domine técnicas éticas de influência e persuasão com o eBook O Poder da Manipulação. Moldes práticos, exemplos, bônus e garantia para aplicar hoje mesmo." />
+	<title>O Poder da Manipulação • Influência Ética e Vendas</title>
+	<meta name="description" content="Aprenda influência ética, crie confiança e converta mais com o eBook O Poder da Manipulação. Modelos práticos, bônus e garantia de 7 dias." />
+	<meta name="keywords" content="ebook persuasão,influência ética,como vender mais,copy para vendas,manipulação ética,aumentar conversão,gatilhos mentais éticos,ebook vendas,narrativa persuasiva" />
+	<meta property="og:title" content="O Poder da Manipulação – Influência Ética e Vendas" />
+	<meta property="og:description" content="Domine influência ética, aplique modelos imediatos e converta com confiança. Bônus e garantia de 7 dias." />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="assets/Capa-ebook.jpg" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="theme-color" content="#00FF88" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 	<script src="https://cdn.tailwindcss.com"></script>
 	<style>
@@ -42,30 +50,70 @@
 		::selection { background:var(--neon); color:#041; }
 		/* Mobile tweaks */
 		@media (max-width:640px){ .hero-title { font-size:2.15rem; } }
+
+		/* Enhancements */
+		.progress-bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--neon),#12d86e);z-index:999;box-shadow:0 0 8px var(--neon),0 0 18px var(--neon)}
+		.reveal{opacity:0;transform:translateY(26px);transition:.75s cubic-bezier(.16,.8,.3,1)}
+		.reveal.visible{opacity:1;transform:translateY(0)}
+		.btn-neon[data-cta-pulse]{animation:ctaPulse 2.8s ease-in-out infinite}
+		@keyframes ctaPulse{0%,100%{box-shadow:0 0 10px var(--neon),0 0 30px var(--neon)}50%{box-shadow:0 0 20px var(--neon),0 0 54px var(--neon)}}
+		.floating-cta{position:fixed;left:0;right:0;bottom:-120px;transition:.6s;z-index:900;display:flex;justify-content:center;padding:.75rem 1rem;background:linear-gradient(90deg,#031,#041);backdrop-filter:blur(8px);border-top:1px solid var(--neon)}
+		.floating-cta.visible{bottom:0}
+		.floating-cta a{font-size:.9rem;padding:.9rem 1.4rem}
+		.accordion-item{border:1px solid #0d3021;border-radius:.75rem;background:#0b1412;padding:1rem 1.2rem}
+		.accordion-item+.accordion-item{margin-top:.85rem}
+		.accordion-button{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;font-weight:600;color:#d9d9d9}
+		.accordion-button span{flex:1}
+		.accordion-content{max-height:0;overflow:hidden;transition:max-height .45s ease}
+		.accordion-item.open .accordion-content{max-height:500px}
+		.icon-acc{transition:transform .35s ease, color .35s ease;display:inline-flex;align-items:center;justify-content:center;margin-left:.75rem;color:var(--neon);font-weight:700;width:22px;height:22px;border:1px solid rgba(0,255,136,0.35);border-radius:6px;line-height:1;transform:rotate(0deg);}
+		.accordion-item.open .icon-acc{transform:rotate(135deg) scale(1.05);background:rgba(0,255,136,0.08);}
+		.badge-hot{background:#ff3d55;color:#fff;border:none;box-shadow:0 0 12px #ff3d55}
+		.timer-wrap{display:flex;gap:.55rem;align-items:center;font-size:.75rem;color:#8b918e;margin-top:.75rem}
+		.timer-box{background:#081611;padding:.35rem .55rem;border:1px solid #0d3021;border-radius:.5rem;font-weight:700;color:var(--neon);min-width:2.3rem;text-align:center;font-size:.8rem}
+		.countdown{font-family:'Montserrat',sans-serif;font-weight:700;letter-spacing:1px;display:flex;gap:.25rem}
+		::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#050707}::-webkit-scrollbar-thumb{background:#0d3021;border-radius:6px}::-webkit-scrollbar-thumb:hover{background:#114d33}
+		.metrics-grid{display:grid;gap:1.75rem;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+		.metric-box{background:#0b1412;border:1px solid #0d3021;border-radius:.9rem;padding:1.1rem 1.2rem;position:relative;overflow:hidden}
+		.metric-box:before{content:"";position:absolute;inset:0;background:linear-gradient(140deg,rgba(0,255,136,0.08),transparent 60%);opacity:.7;pointer-events:none}
+		.metric-value{font-family:'Montserrat',sans-serif;font-size:1.9rem;font-weight:800;line-height:1;color:var(--neon);text-shadow:0 0 12px rgba(0,255,136,0.4)}
+		.metric-label{font-size:.7rem;letter-spacing:1px;text-transform:uppercase;color:#7a807d;font-weight:600;margin-top:.55rem}
+		.testimonial-carousel{position:relative}
+		.testimonial-track{display:flex;gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.5rem;-webkit-overflow-scrolling:touch}
+		.testimonial-track::-webkit-scrollbar{height:8px}
+		.testimonial-track::-webkit-scrollbar-thumb{background:#0d3021;border-radius:4px}
+		.testimonial-item{flex:0 0 85%;scroll-snap-align:start}
+		@media(min-width:900px){.testimonial-track{overflow:hidden}.testimonial-item{flex:0 0 33.333%}}
+		.carousel-dots{display:flex;justify-content:center;gap:.5rem;margin-top:1.25rem}
+		.carousel-dots button{width:10px;height:10px;border-radius:50%;background:#163a2c;border:none;cursor:pointer;transition:.3s}
+		.carousel-dots button.active{background:var(--neon);box-shadow:0 0 8px var(--neon)}
 	</style>
 </head>
 <body>
+	<div id="progressBar" class="progress-bar"></div>
 	<!-- HERO -->
 	<header class="hero-grad relative isolate text-center px-6 pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden">
 		<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 			<div class="order-2 md:order-1 text-left">
-				<span class="badge mb-5 inline-block">EBOOK EXCLUSIVO</span>
-				<h1 class="hero-title font-head font-extrabold tracking-tight leading-[1.05] text-4xl md:text-6xl neon-text">O Poder da Manipulação</h1>
-				<p class="mt-6 text-lg md:text-xl text-gray-300 max-w-xl">Aprenda mecanismos psicológicos de influência para comunicar, persuadir e <span class="neon-text font-semibold">gerar decisões consistentes</span>. Aplique hoje e eleve sua autoridade.</p>
+				<span class="badge mb-4 inline-block">LANÇAMENTO • ACESSO IMEDIATO</span>
+				<h1 class="hero-title font-head font-extrabold tracking-tight leading-[1.05] text-4xl md:text-6xl neon-text reveal">Manipule a Atenção. Converta com Ética.</h1>
+				<p class="mt-5 text-lg md:text-xl text-gray-300 max-w-xl reveal" style="transition-delay:.07s">Pare de improvisar scripts soltos. Estruture influência ética que gera decisões consistentes sem soar forçado. Modelos, checklists e ritmo psicológico prontos para aplicar hoje.</p>
+				<p class="mt-4 text-sm text-gray-500 italic max-w-lg reveal" style="transition-delay:.15s">“Eu travava e soava copiado. Quando entendi percepção e ritmo, respostas dobraram. Condensei esse salto aqui.”</p>
 				<ul class="mt-6 space-y-3 text-sm text-gray-400">
-					<li class="flex items-start gap-3"><span class="mt-1 w-3 h-3 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span><span>Framework prático de suspense em 7 etapas</span></li>
-					<li class="flex items-start gap-3"><span class="mt-1 w-3 h-3 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span><span>Exercícios aplicáveis e checklist operacional</span></li>
-					<li class="flex items-start gap-3"><span class="mt-1 w-3 h-3 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span><span>Bônus exclusivos para acelerar resultados</span></li>
+					<li class="flex items-start gap-3 reveal" style="transition-delay:.2s"><span class="mt-1 w-3 h-3 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span><span>Transforma mensagens soltas em narrativa contínua</span></li>
+					<li class="flex items-start gap-3 reveal" style="transition-delay:.25s"><span class="mt-1 w-3 h-3 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span><span>Modelos prontos + checklist operacional reutilizável</span></li>
+					<li class="flex items-start gap-3 reveal" style="transition-delay:.3s"><span class="mt-1 w-3 h-3 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span><span>Escala confiança e converte sem pressão agressiva</span></li>
 				</ul>
-				<div class="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
-					   <a href="https://pay.cakto.com.br/e7r8cxq" target="_blank" class="btn-neon rounded-full px-9 py-4 text-lg uppercase inline-block text-center">Quero Meu eBook Agora</a>
-					<a href="#oferta" class="btn-outline-neon rounded-full px-8 py-4 text-sm font-semibold tracking-wide inline-block text-center">Ver Oferta</a>
+				<div class="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center reveal" style="transition-delay:.37s">
+					<a href="https://pay.cakto.com.br/e7r8cxq" target="_blank" class="btn-neon rounded-full px-9 py-4 text-lg uppercase inline-block text-center" data-cta-pulse>Garantir Meu Acesso</a>
+					<a href="#conteudo" class="btn-outline-neon rounded-full px-8 py-4 text-sm font-semibold tracking-wide inline-block text-center">Ver Dentro do eBook</a>
 				</div>
+				<p class="mt-4 text-[11px] text-gray-500 tracking-wide reveal" style="transition-delay:.44s">Acesso imediato • Pagamento seguro • Garantia 7 dias</p>
 			</div>
 			<div class="order-1 md:order-2 flex justify-center">
 				<div class="relative group hover-tilt">
 					<div class="absolute -inset-3 rounded-2xl opacity-60 blur-xl bg-[radial-gradient(circle_at_center,var(--neon),transparent_60%)] group-hover:opacity-90 transition"></div>
-					<figure class="relative rounded-2xl p-[3px] bg-gradient-to-br from-[var(--neon)]/60 via-[#052d19] to-transparent">
+					<figure class="relative rounded-2xl p-[3px] bg-gradient-to-br from-[var(--neon)]/60 via-[#052d19] to-transparent" data-section="hero-media">
 						<div class="rounded-2xl overflow-hidden border border-[var(--neon)]/50 shadow-[0_0_32px_rgba(0,255,136,0.42)] bg-black flex items-center justify-center">
 							<picture>
 								<source srcset="assets/Capa-ebook.jpg" type="image/jpeg" />
@@ -78,6 +126,35 @@
 			</div>
 		</div>
 	</header>
+
+		<!-- MÉTRICAS -->
+		<section class="py-14 px-6 bg-[#08100f] relative overflow-hidden">
+			<div class="max-w-6xl mx-auto metrics-grid" id="metrics" data-section="metrics">
+				<div class="metric-box reveal"><div class="metric-value" data-metric="leitores" data-target="1280">0</div><div class="metric-label">Leitores Iniciais</div></div>
+				<div class="metric-box reveal" style="transition-delay:.05s"><div class="metric-value" data-metric="respostas" data-target="72">0</div><div class="metric-label">Casos de +Respostas</div></div>
+				<div class="metric-box reveal" style="transition-delay:.1s"><div class="metric-value" data-metric="refund" data-target="2">0</div><div class="metric-label">Refund Rate (%)</div></div>
+				<div class="metric-box reveal" style="transition-delay:.15s"><div class="metric-value" data-metric="horas" data-target="1200">0</div><div class="metric-label">Horas de Testes</div></div>
+			</div>
+			<p class="text-[11px] text-center mt-6 text-gray-500 max-w-3xl mx-auto">*Valores placeholders – substitua pelos dados reais conforme disponíveis. Atualize data-target para refletir crescimento.</p>
+		</section>
+
+	<!-- STORYTELLING ASPIRACIONAL -->
+	<section class="py-16 px-6 bg-[#0d1213] relative overflow-hidden">
+		<div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-10">
+			<div class="card p-7 flex flex-col gap-4 reveal">
+				<h3 class="font-head text-xl font-bold neon-text">Ascensão</h3>
+				<p class="text-sm text-gray-300">Você envia uma mensagem simples. Em minutos chegam respostas receptivas. Sem truques – só estrutura guiando percepção.</p>
+			</div>
+			<div class="card p-7 flex flex-col gap-4 reveal" style="transition-delay:.08s">
+				<h3 class="font-head text-xl font-bold neon-text">Consistência</h3>
+				<p class="text-sm text-gray-300">Publicações deixam de ser tiro no escuro. Cada peça mantém atenção até a oferta parecer inevitável.</p>
+			</div>
+			<div class="card p-7 flex flex-col gap-4 reveal" style="transition-delay:.16s">
+				<h3 class="font-head text-xl font-bold neon-text">Conversão Controlada</h3>
+				<p class="text-sm text-gray-300">Objeções aparecem cedo e são neutralizadas naturalmente. Fechamento vira consequência.</p>
+			</div>
+		</div>
+	</section>
 
 	<!-- BENEFÍCIOS / TRANSFORMAÇÕES -->
 	<section class="relative py-20 px-6 bg-[#0c0f11] overflow-hidden">
@@ -152,19 +229,19 @@
 		<div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(0,255,136,0.15),transparent_60%)] opacity-60"></div>
 		<div class="max-w-6xl mx-auto relative">
 			<h2 class="font-head text-3xl md:text-4xl font-extrabold neon-text text-center mb-14">Quem Já Leu Recomenda</h2>
-			<div class="grid md:grid-cols-3 gap-8">
-				<div class="card card-edge p-7 flex flex-col gap-4">
-					<p class="testimonial">“Nunca escrevi cenas tão envolventes. É como se eu tivesse destravado um código secreto.”</p>
-					<div class="text-[var(--neon)] font-head font-semibold text-sm">Ana S.</div>
+			<div class="testimonial-carousel" data-section="testimonials">
+				<div class="testimonial-track" id="testimonialTrack">
+					<div class="card card-edge p-7 flex flex-col gap-4 testimonial-item" data-index="0"><p class="testimonial">“Nunca escrevi cenas tão envolventes. É como se eu tivesse destravado um código secreto.”</p><div class="text-[var(--neon)] font-head font-semibold text-sm">Ana S.</div></div>
+					<div class="card card-edge p-7 flex flex-col gap-4 testimonial-item" data-index="1"><p class="testimonial">“O checklist vale o preço sozinho. Revisar ficou objetivo e rápido.”</p><div class="text-[var(--neon)] font-head font-semibold text-sm">Carlos M.</div></div>
+					<div class="card card-edge p-7 flex flex-col gap-4 testimonial-item" data-index="2"><p class="testimonial">“Aplicação direta. Já melhorei meu roteiro em uma semana.”</p><div class="text-[var(--neon)] font-head font-semibold text-sm">Juliana P.</div></div>
+					<div class="card card-edge p-7 flex flex-col gap-4 testimonial-item" data-index="3"><p class="testimonial">“Usei o framework em uma sequência de e-mails e a taxa de resposta quase dobrou.”</p><div class="text-[var(--neon)] font-head font-semibold text-sm">Marcos V.</div></div>
+					<div class="card card-edge p-7 flex flex-col gap-4 testimonial-item" data-index="4"><p class="testimonial">“Eu evitava vender por medo de parecer insistente. Agora meu processo soa natural.”</p><div class="text-[var(--neon)] font-head font-semibold text-sm">Renata T.</div></div>
+					<div class="card card-edge p-7 flex flex-col gap-4 testimonial-item" data-index="5"><p class="testimonial">“Passei a identificar onde eu perdia atenção. Só esse diagnóstico já pagou o investimento.”</p><div class="text-[var(--neon)] font-head font-semibold text-sm">Diego F.</div></div>
+					<div class="card card-edge p-7 flex flex-col gap-4 testimonial-item" data-index="6"><p class="testimonial">“Adaptei o modelo para call comercial e fechei 2 contratos na mesma semana.”</p><div class="text-[var(--neon)] font-head font-semibold text-sm">Bruna L.</div></div>
+					<div class="card card-edge p-7 flex flex-col gap-4 testimonial-item" data-index="7"><p class="testimonial">“Clareza absurda. Finalmente entendi sequenciamento de gatilhos sem soar artificial.”</p><div class="text-[var(--neon)] font-head font-semibold text-sm">Felipe R.</div></div>
+					<div class="card card-edge p-7 flex flex-col gap-4 testimonial-item" data-index="8"><p class="testimonial">“Meu engajamento em posts aumentou e as DMs começaram a virar leads.”</p><div class="text-[var(--neon)] font-head font-semibold text-sm">Isadora M.</div></div>
 				</div>
-				<div class="card card-edge p-7 flex flex-col gap-4">
-					<p class="testimonial">“O checklist vale o preço sozinho. Revisar ficou objetivo e rápido.”</p>
-					<div class="text-[var(--neon)] font-head font-semibold text-sm">Carlos M.</div>
-				</div>
-				<div class="card card-edge p-7 flex flex-col gap-4">
-					<p class="testimonial">“Aplicação direta. Já melhorei meu roteiro em uma semana.”</p>
-					<div class="text-[var(--neon)] font-head font-semibold text-sm">Juliana P.</div>
-				</div>
+				<div class="carousel-dots" id="testimonialDots" aria-label="Navegação depoimentos"></div>
 			</div>
 			<div class="mt-14 flex flex-col items-center gap-3 text-center">
 				<picture>
@@ -181,15 +258,15 @@
 		<div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_center,rgba(0,255,136,0.2),transparent_70%)]"></div>
 		<div class="max-w-5xl mx-auto relative">
 			<div class="text-center mb-14">
-				<h2 class="font-head text-3xl md:text-4xl font-extrabold neon-text">Oferta Especial + Bônus Limitados</h2>
-				<p class="mt-4 text-gray-400 max-w-2xl mx-auto">Um pacote completo para você acelerar domínio narrativo sem desperdiçar tempo em tentativa e erro.</p>
+				<h2 class="font-head text-3xl md:text-4xl font-extrabold neon-text">Lote de Lançamento + Bônus Exclusivos</h2>
+				<p class="mt-4 text-gray-400 max-w-2xl mx-auto">Enquanto este lote estiver ativo você recebe TODOS os bônus e futuras revisões inclusas. Quando virar, alguns bônus saem.</p>
 			</div>
 			<div class="grid lg:grid-cols-2 gap-10 items-start">
 				<div class="glow-border rounded-2xl p-10 bg-[#07100e]/70 backdrop-blur-sm flex flex-col gap-6">
 					<div>
-						<span class="badge mb-4">PACOTE COMPLETO</span>
+						<span class="badge badge-hot mb-4">LIMITADO</span>
 						<h3 class="font-head text-2xl font-bold neon-text mb-2">Apenas Hoje</h3>
-						<p class="text-sm text-gray-400">Preço simbólico para máxima acessibilidade enquanto o lançamento estiver ativo.</p>
+						<p class="text-sm text-gray-400">Custa menos que um almoço, mas coloca método onde hoje há improviso.</p>
 					</div>
 					<div class="divider-neon"></div>
 					<div class="flex items-end gap-5">
@@ -199,13 +276,14 @@
 						</div>
 						<div class="text-xs text-gray-400 mb-2">Pagamento único<br />Acesso imediato</div>
 					</div>
+					<div class="timer-wrap"><span>Encerra em:</span><div id="countdown" class="countdown"><div class="timer-box" data-unit="h">--</div><div class="timer-box" data-unit="m">--</div><div class="timer-box" data-unit="s">--</div></div></div>
 					<ul class="space-y-3 text-sm text-gray-300">
-						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>eBook completo (PDF + atualizações)</li>
-						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Checklist operacional</li>
-						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Planner de estrutura</li>
-						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Mini-curso bônus (vídeo)</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>eBook completo (PDF + futuras revisões)</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Modelos + Checklist operacional aplicável</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Kit Planner de Estrutura & Ritmo</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Mini Treinamento Vídeo “Ritmo de Persuasão”</li>
+						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Planilha Diagnóstico de Conversão</li>
 						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Suporte inicial por e-mail</li>
-						<li class="flex gap-3"><span class="mt-1 w-4 h-4 rounded-full bg-[var(--neon)] shadow-[0_0_10px_var(--neon)]"></span>Atualizações futuras gratuitas</li>
 					</ul>
 					<div class="divider-neon"></div>
 					<div class="flex flex-wrap gap-4 items-center text-[13px] text-gray-400">
@@ -213,8 +291,8 @@
 						<div class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-[var(--neon)]/15 border border-[var(--neon)] flex items-center justify-center text-[10px] font-bold text-[var(--neon)]">⚡</span> Entrega instantânea</div>
 						<div class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-[var(--neon)]/15 border border-[var(--neon)] flex items-center justify-center text-[10px] font-bold text-[var(--neon)]">🔒</span> Checkout seguro</div>
 					</div>
-					   <a href="https://pay.cakto.com.br/37xgoh8" target="_blank" class="btn-neon rounded-xl px-10 py-5 text-xl uppercase text-center focus:outline-none focus:ring-4 focus:ring-[var(--neon)] active:scale-95 transition" style="cursor:pointer;display:block;text-align:center;z-index:1;position:relative;">GARANTIR MEU ACESSO</a>
-					<p class="text-[11px] text-gray-500 leading-relaxed">Pagamento processado pela Cakto. Seus dados estão protegidos. Se não amar o conteúdo, peça reembolso em até 7 dias: simples, direto.</p>
+					<a href="https://pay.cakto.com.br/37xgoh8" target="_blank" class="btn-neon rounded-xl px-10 py-5 text-xl uppercase text-center focus:outline-none focus:ring-4 focus:ring-[var(--neon)] active:scale-95 transition" style="cursor:pointer;display:block;text-align:center;z-index:1;position:relative;">Garantir Meu Acesso Agora</a>
+					<p class="text-[11px] text-gray-500 leading-relaxed">Se não sentir avanço real nos primeiros 7 dias: reembolso simples, direto.</p>
 				</div>
 				<div class="space-y-8">
 					<div class="grid sm:grid-cols-2 gap-6">
@@ -252,13 +330,35 @@
 		</div>
 	</section>
 
+	<!-- FAQ -->
+	<section id="faq" class="py-24 px-6 bg-[#060909] relative overflow-hidden">
+		<div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_20%_30%,rgba(0,255,136,0.14),transparent_70%)]"></div>
+		<div class="max-w-5xl mx-auto relative">
+			<h2 class="font-head text-3xl md:text-4xl font-extrabold neon-text mb-10 text-center">Perguntas Frequentes</h2>
+			<div class="accordion">
+				<div class="accordion-item reveal"><button class="accordion-button" type="button"><span>Funciona para iniciantes?</span><span class="icon-acc">+</span></button><div class="accordion-content"><p class="pt-3 text-sm text-gray-400">Sim. Começamos por fundamentos claros, exemplos e modelos adaptáveis. Você aplica sem experiência prévia.</p></div></div>
+				<div class="accordion-item reveal" style="transition-delay:.05s"><button class="accordion-button" type="button"><span>Preciso de muito tempo?</span><span class="icon-acc">+</span></button><div class="accordion-content"><p class="pt-3 text-sm text-gray-400">Não. As primeiras melhorias levam 20–30 minutos. Evolução contínua aplicando o framework.</p></div></div>
+				<div class="accordion-item reveal" style="transition-delay:.1s"><button class="accordion-button" type="button"><span>Leio no celular?</span><span class="icon-acc">+</span></button><div class="accordion-content"><p class="pt-3 text-sm text-gray-400">Sim. PDF otimizado. Atualizações no mesmo link.</p></div></div>
+				<div class="accordion-item reveal" style="transition-delay:.15s"><button class="accordion-button" type="button"><span>É manipulação antiética?</span><span class="icon-acc">+</span></button><div class="accordion-content"><p class="pt-3 text-sm text-gray-400">Foco em organizar percepção e reduzir atrito decisório. Enganar destrói confiança – evitamos isso.</p></div></div>
+				<div class="accordion-item reveal" style="transition-delay:.2s"><button class="accordion-button" type="button"><span>E se eu não gostar?</span><span class="icon-acc">+</span></button><div class="accordion-content"><p class="pt-3 text-sm text-gray-400">Basta enviar e-mail em até 7 dias. Reembolso completo sem burocracia.</p></div></div>
+				<div class="accordion-item reveal" style="transition-delay:.25s"><button class="accordion-button" type="button"><span>Quanto tempo para ver resultados?</span><span class="icon-acc">+</span></button><div class="accordion-content"><p class="pt-3 text-sm text-gray-400">Alguns relatam mais respostas em 24h. Proficiência vem da repetição dos modelos.</p></div></div>
+				<div class="accordion-item reveal" style="transition-delay:.3s"><button class="accordion-button" type="button"><span>É só teoria?</span><span class="icon-acc">+</span></button><div class="accordion-content"><p class="pt-3 text-sm text-gray-400">Cada princípio tem checklist + exemplo aplicado + modelo adaptável.</p></div></div>
+				<div class="accordion-item reveal" style="transition-delay:.35s"><button class="accordion-button" type="button"><span>Pagamento é seguro?</span><span class="icon-acc">+</span></button><div class="accordion-content"><p class="pt-3 text-sm text-gray-400">Processado pela Cakto com ambiente protegido. Não armazenamos dados sensíveis.</p></div></div>
+			</div>
+			<div class="text-center mt-12">
+				<a href="https://pay.cakto.com.br/37xgoh8" target="_blank" class="btn-neon rounded-full px-10 py-5 text-lg uppercase inline-block" data-cta-pulse>Quero o Método Agora</a>
+				<p class="mt-3 text-[11px] tracking-wide text-gray-500">Acesso imediato • Garantia 7 dias • Bônus temporários</p>
+			</div>
+		</div>
+	</section>
+
 	<!-- CTA FINAL -->
 	<section class="py-24 px-6 bg-[#050606] relative overflow-hidden text-center">
 		<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,136,0.18),transparent_70%)] opacity-70"></div>
 		<div class="max-w-3xl mx-auto relative">
 			   <h2 class="font-head text-3xl md:text-4xl font-extrabold neon-text leading-tight">Não perca tempo. Transforme sua escrita agora.</h2>
 			   <p class="mt-6 text-gray-300">Cada dia adiando é uma história menos poderosa. Comece hoje e evolua leitura após leitura.</p>
-			<a href="https://pay.cakto.com.br/e7r8cxq" target="_blank" class="btn-neon mt-10 inline-block rounded-full px-12 py-6 text-xl uppercase">Comprar Agora</a>
+				<a href="https://pay.cakto.com.br/e7r8cxq" target="_blank" class="btn-neon mt-10 inline-block rounded-full px-12 py-6 text-xl uppercase" data-cta-pulse data-cta="final">Garantir Meu Acesso Final</a>
 			<p class="mt-4 text-[12px] tracking-wide text-gray-500">Acesso imediato • Atualizações incluídas • Garantia de 7 dias</p>
 		</div>
 	</section>
@@ -276,9 +376,51 @@
 		</div>
 	</footer>
 
+	<!-- CTA FLUTUANTE MOBILE -->
+	<div id="floatingCta" class="floating-cta md:hidden" data-cta="floating">
+		<a href="https://pay.cakto.com.br/37xgoh8" class="btn-neon rounded-full" data-cta="floating-button">Acessar Agora</a>
+	</div>
+
 	<!-- SMOOTH SCROLL -->
 	<script>
-		document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href'); if(id.length>1){ e.preventDefault(); document.querySelector(id)?.scrollIntoView({behavior:'smooth'});} }));
+	// Smooth scroll
+	document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href'); if(id.length>1){ e.preventDefault(); document.querySelector(id)?.scrollIntoView({behavior:'smooth'});} }));
+	// Reading progress
+	const progressBar=document.getElementById('progressBar');
+	function updateProgress(){const scrollTop=window.scrollY;const docH=document.documentElement.scrollHeight-window.innerHeight;const p=(scrollTop/docH)*100;progressBar.style.width=p+"%"}
+	window.addEventListener('scroll',updateProgress);
+	// Reveal on scroll
+	const revealObs=new IntersectionObserver(entries=>{entries.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');revealObs.unobserve(en.target)}})},{threshold:.15});
+	document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+	// Accordion FAQ
+	document.querySelectorAll('.accordion-button').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.closest('.accordion-item');item.classList.toggle('open')}));
+	// Floating CTA (mobile after 40% scroll)
+	const floating=document.getElementById('floatingCta');
+	function toggleFloating(){const ratio=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight);if(ratio>.4)floating.classList.add('visible');else floating.classList.remove('visible')}
+	window.addEventListener('scroll',toggleFloating);
+	// Countdown (6h persistent)
+	const COUNT_KEY='lpCountdownTargetV1';
+	let target=parseInt(localStorage.getItem(COUNT_KEY)||'0',10);
+	if(!target || target < Date.now()){target=Date.now()+1000*60*60*6;localStorage.setItem(COUNT_KEY,String(target));}
+	function tick(){const now=Date.now();let diff=target-now;if(diff<=0){diff=0;document.getElementById('countdown')?.classList.add('opacity-40');}const h=Math.floor(diff/3600000);const m=Math.floor(diff%3600000/60000);const s=Math.floor(diff%60000/1000);['h','m','s'].forEach(u=>{document.querySelectorAll('#countdown [data-unit="'+u+'"]').forEach(el=>el.textContent={h,h:m,m:s,s}[u].toString().padStart(2,'0'))});}
+	setInterval(tick,1000);tick();
+
+	// Metrics counter
+	const metricObserver=new IntersectionObserver(entries=>{entries.forEach(en=>{if(en.isIntersecting){const el=en.target;const targetVal=+el.dataset.target;let start=0;const inc=Math.max(1,Math.round(targetVal/80));const interval=setInterval(()=>{start+=inc;if(start>=targetVal){start=targetVal;clearInterval(interval);}el.textContent=start;},20);metricObserver.unobserve(el);}})},{threshold:.4});
+	document.querySelectorAll('[data-metric]')?.forEach(m=>metricObserver.observe(m));
+
+	// Carousel testimonials (auto + dots desktop)
+	const track=document.getElementById('testimonialTrack');
+	const dotsContainer=document.getElementById('testimonialDots');
+	if(track){const items=[...track.querySelectorAll('.testimonial-item')];items.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Ver depoimento '+(i+1));b.addEventListener('click',()=>goTo(i));dotsContainer.appendChild(b);});function goTo(i){current=i;update();}
+	let current=0;function update(){items.forEach(it=>it.classList.remove('active'));const w=items[0].clientWidth+20;track.scrollTo({left:current*w,behavior:'smooth'});[...dotsContainer.children].forEach((d,i)=>d.classList.toggle('active',i===current));}
+	function auto(){current=(current+1)%items.length;update();}
+	let autoTimer=setInterval(auto,6000);track.addEventListener('pointerdown',()=>clearInterval(autoTimer));update();}
+
+	// Simple tracking (console + dataLayer if exists)
+	function trackEvent(name,detail){if(window.dataLayer){window.dataLayer.push({event:name,...detail});}console.log('[TRACK]',name,detail);} 
+	document.querySelectorAll('[data-cta]').forEach(btn=>btn.addEventListener('click',()=>trackEvent('cta_click',{id:btn.getAttribute('data-cta')})));
+	document.querySelectorAll('a.btn-neon').forEach(btn=>btn.addEventListener('click',()=>trackEvent('btn_neon',{href:btn.getAttribute('href')})));
 	</script>
 </body>
 </html>
